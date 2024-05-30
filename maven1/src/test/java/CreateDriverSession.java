@@ -16,8 +16,11 @@ public class CreateDriverSession {
 		caps.setCapability("deviceName","device");
 		caps.setCapability("automationName","UiAutomator2");
 		caps.setCapability("udid","RZ8T907S1SD");
-		caps.setCapability("app","C:\\Users\\Admin\\eclipse-workspace\\maven1\\src\\main\\resources\\ApiDemos-debug.apk");
+		//caps.setCapability("app","C:\\Users\\Admin\\eclipse-workspace\\maven1\\src\\main\\resources\\ApiDemos-debug.apk");
 		
+		//appPackage and appActivity are used when the app is already installed in the device
+		caps.setCapability("appPackage", "io.appium.android.apis");
+		caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
 		//Alternate way to set capabilities
 		
 		/*UiAutomator2Options options=new UiAutomator2Options().setPlatformName("uiautomator2@3.2.0");
